@@ -14,7 +14,7 @@ export default function App() {
     <View style={styles.container} >
       <Text> {text} </Text>
       <Button
-        onPress={() => { setText('Je suis en train de faire un test') }}
+        onPress={() => { setText('Je suis en train de faire un test peut etre que ca fontionne maintenant') }}
         title='Change le text :)'
       >
 
