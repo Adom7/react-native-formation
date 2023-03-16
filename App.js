@@ -8,6 +8,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 export default function App() {
 
   const [text, setText] = useState(' World');
+  const [value, setValue] = useState(0);
 
 
   return (
@@ -19,7 +20,11 @@ export default function App() {
       >
 
       </Button>
-
+      <Text> { value } </Text>
+      <Button
+        onPress={() => { setValue( value + 1) }}
+        title='+1'
+       />
     </View >
 
   );
